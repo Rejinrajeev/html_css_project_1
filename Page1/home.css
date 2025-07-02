@@ -1,0 +1,225 @@
+:root{
+    --second-text-color:rgba(115, 115, 115, 1);
+    --light-text-color:rgba(255, 255, 255, 1);
+    --text-color:rgba(37, 43, 66, 1);
+    --light-background-color:rgba(255, 255, 255, 1);
+    --danger-color:rgba(231, 64, 64, 1);
+    --primary-color:rgba(150, 187, 124, 1);
+    --primary-text-color:rgba(150, 187, 124, 1);
+    --faded-primary-color:rgba(239, 248, 237, 1);
+
+}
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+
+.section-bg{
+    background-color:rgb(239,248,237);
+    max-width:100%;
+
+}
+.Container{
+    margin: auto; 
+    padding: 0px 15px;
+    max-width: 1050px;  
+} 
+
+.header{
+    display: flex;
+    height: 91px;
+    /* width: 1322px; */
+    /* padding-left: 59px; */
+    /* padding: 20px 80px; */
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+ .logo{
+    /* width: 187px; */
+    /* height: 58px; */
+    /* padding-top: 17px; */
+    /* padding-left: 136px; */
+    display: flex;
+ 
+} 
+
+#logo_name{
+    /* width: 182px; */
+    /* height: 32px; */
+    /* padding-top: 15px; */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0.1px;
+    color: var(--text-color);
+}
+
+.nav_bar{
+    display: flex; 
+    /* width: 815px; */
+    /* height: 58px; */
+    /* padding-top: 16px; */
+    /* padding-left: 364px; */
+    gap: 250px;
+}
+
+.nav_list{
+    /* width: 275px; */
+    /* height: 24px; */
+    padding-top: 15px;
+    gap: 21px;
+    display: flex;
+    list-style: none;
+}
+
+.nav_list_item{
+    /* width: 43px; */
+    /* height: 24px; */
+
+}
+
+.nav_ls_item{
+/* width: 43px; */
+/* height: 24px; */
+text-decoration: none;
+font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-weight: 700;
+font-size: 14px;
+line-height: 24px;
+letter-spacing: 0.2px;
+text-align: right;
+color: var(--second-text-color);
+
+}
+
+.nav_bar_logins{
+    /* width: 300px; */
+/* height: 52px; */
+/* padding-top: 3px; */
+padding-left: 100px;
+gap: 45px;
+display: flex;
+}
+#nav_logins_item_1{
+    /* width: 41px; */
+    /* height: 22px; */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0.2px;
+    padding-top: 15px;
+   text-align: right;
+   color: var(--primary-color);
+   background-color: transparent;
+   border: none;
+   cursor: pointer;
+}
+
+#nav_logins_item_2{
+    width: 137px;
+height: 52px;
+gap: 15px;
+border-radius: 5px;
+padding-top: 15px;
+padding-right: 25px;
+padding-bottom: 15px;
+padding-left: 25px;
+background-color: var(--primary-color);
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-weight: 700;
+font-size: 14px;
+line-height: 22px;
+letter-spacing: 0.2px;
+border: none;
+color: white;
+}
+
+.main_container{
+    max-width: 1540px;
+    height: 685px;
+    display: flex;
+/* padding-top: 95px; */
+
+}
+
+#online{
+    font-family: Montserrat;
+font-weight: 700;
+font-size: 16px;
+line-height: 24px;
+letter-spacing: 0.1px;
+color: rgba(150, 187, 124, 1);
+
+
+}
+#high{
+    font-family: Montserrat;
+font-weight: 700;
+font-size: 58px;
+line-height: 80px;
+letter-spacing: 0.2px;
+color: var(--text-color);
+}
+#every_day{
+    font-family: Montserrat;
+font-weight: 400;
+font-size: 20px;
+line-height: 30px;
+letter-spacing: 0.2px;
+color: var(--second-text-color);
+
+}
+
+#hero_button_1{
+    font-family: Montserrat;
+font-weight: 700;
+font-size: 14px;
+line-height: 22px;
+letter-spacing: 0.2px;
+text-align: center;
+background-color:rgba(150, 187, 124, 1) ;
+border-radius: 5px;
+border: none;
+display: flex;
+color: rgba(255, 255, 255, 1);
+width: 113px;
+height: 22px;
+display: flex;
+
+
+}
+
+#hero_button_2{font-family: Montserrat;
+font-weight: 700;
+font-size: 14px;
+line-height: 22px;
+letter-spacing: 0.2px;
+text-align: center;
+color: rgba(150, 187, 124, 1);
+background-color: transparent;
+border-color: rgba(150, 187, 124, 1);
+border-radius: 5px;
+width: 82px;
+height: 22px;
+display: flex;
+border: 1px;
+}
+
+.hero_button{
+    width: 193px;
+height: 52px;
+gap: 10px;
+display: flex;
+}
+
+.hero{
+    display: flex;
+}
+#hero_left_buttons{
+    display: flex;
+}
