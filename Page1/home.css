@@ -248,6 +248,19 @@ button{
 
 }
 
+.card:hover{
+    background-color: var(--primary-color);
+    transform: scale(1.1);
+}
+.card:hover .c_heading{
+    color: white;
+}
+.card:hover .card_para{
+    color: white;
+}
+.card:hover .card_red_line{
+    background-color: white;
+}
 .card_heading {
     font-family: Montserrat;
     font-weight: 700;
@@ -407,7 +420,9 @@ button{
 .card_top_part {
     position: relative;
 }
-
+.section_most_popular_courses{
+    height: 1088px;
+}
 
 /* card bottoommm */
 
@@ -426,7 +441,7 @@ button{
 
 .card_bottom_part {
     display: grid;
-    padding: 20px;
+    padding: 14px;
     gap: 10px;
 }
 
@@ -512,7 +527,7 @@ button{
 /* page 6 css */
 
 .section_our_experts_teacher {
-    height: 1440px;
+    height: 1000px;
 }
 
 .our_experts_teacher_top_part {
@@ -520,10 +535,12 @@ button{
     gap: 10px;
 }
 
+.our_experts_teacher_contents{
+    display: grid;
+    gap: 80px;
+}
 .our_experts_teacher_card{
     display: grid;
-    justify-content: center;
-    align-items: center;
     gap: 35px;
     box-shadow: rgba(0, 0, 0, 0.07);
 }
@@ -572,7 +589,7 @@ font-size: 14px;
 color: var(--second-text-color);
 line-height: 24px;
 letter-spacing: 0.2px;
-text-align: center;
+/* text-align: center; */
 
 }
 
@@ -603,7 +620,7 @@ font-size: 14px;
 color: var(--second-text-color);
 line-height: 20px;
 letter-spacing: 0.2px;
-text-align: center;
+/* text-align: center; */
 
 }
 
@@ -626,4 +643,221 @@ border: none;
 .our_experts_teacher_card_list_row{
     display: flex;
 }
+/* end of page 6 */
+/* ********************** */
 
+/* css of page 7 */
+.section_testimonials{
+    height:865px ;
+}
+
+
+.testimonialscontents{
+    display: grid;
+    gap: 90px;
+}
+.testimonials_top_part{
+    display: grid;
+    gap: 10px;
+}
+
+
+.testimonials_banner{
+    display: flex;
+    justify-content: space-between;
+    padding: 100px;
+}
+
+.testimonials_image{
+    border-radius: 200px;
+    width: 128px;
+    height: 128px;
+    /* align-items: center; */
+}
+
+
+.testimonials_card_gray_parahraph{
+    font-family: Montserrat;
+font-weight: 400;
+font-size: 14px;
+color: var(--second-text-color);
+line-height: 20px;
+letter-spacing: 0.2px;
+/* text-align: center; */
+
+}
+
+
+
+
+.testimonials_card_name{
+    font-family: Montserrat;
+font-weight: 700;
+font-size: 16px;
+color: var(--text-color);
+line-height: 24px;
+letter-spacing: 0.1px;
+/* text-align: center; */
+
+}
+
+
+.testimonials_card_role{
+    font-family: Montserrat;
+font-weight: 700;
+font-size: 14px;
+color: var(--second-text-color);
+line-height: 24px;
+letter-spacing: 0.2px;
+/* text-align: center; */
+
+}
+
+
+.testimonials_card{
+    display: grid;
+    gap: 30px;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+.testimonials_card_text_part{
+    display: grid;
+    gap: 15px;
+    text-align: center;
+}
+
+/* end of 7 */
+
+/* css to eigth */
+.section_newsletter{
+    background-color: rgba(255, 242, 243, 1);
+    height: 594px;
+}
+
+.newsletter_contents{
+    display: grid;
+    gap: 80px;
+    padding: 160px;
+}
+.newsletter_top_part{
+    text-align: center;
+    display: grid;
+    gap: 10px;
+}
+
+
+.form_button{
+    font-family: Montserrat;
+font-weight: 400;
+font-size: 14px;
+color: var(--light-text-color);
+line-height: 28px;
+letter-spacing: 0.2px;
+text-align: center;
+background-color: var(--primary-color);
+border: none;
+border-radius: 5px;
+width: 117px;
+height: 58px;
+
+}
+
+.searchbar{
+    border-radius: 5px;
+    width:688px ;
+    height:58px ;
+    border: none;
+    font-family: Montserrat;
+font-weight: 400;
+font-size: 14px;
+color: var(--second-text-color);
+line-height: 28px;
+letter-spacing: 0.2px;
+
+}
+
+.formm_items{
+    display: flex;
+}
+
+/* footer css */
+
+
+.section_footer{
+    height: 346px;
+}
+
+.footer_contents{
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+.footer_top{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px
+}
+
+.footer-heading{
+    font-family: Montserrat;
+font-weight: 700;
+font-size: 16px;
+color: var(--text-color);
+line-height: 24px;
+letter-spacing: 0.1px;
+
+}
+
+
+.footer_list_text{
+  font-family: Montserrat;
+font-weight: 700;
+font-size: 14px;
+color: var(--second-text-color);
+line-height: 24px;
+letter-spacing: 0.2px;
+}
+
+.footer-column{
+    display: grid;
+    gap: 20px;
+}
+
+.footer_list{
+    display: grid;
+    gap: 10px;
+}
+
+.footer_list_item{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.footer_bottom{
+    display: flex;
+    justify-content: space-between;
+   align-items: center;
+   padding-top: 25px;
+   padding-bottom: 25px;
+}
+
+
+.madewith_text{
+    font-family: Montserrat;
+font-weight: 700;
+font-size: 14px;
+color: var(--second-text-color);
+line-height: 24px;
+letter-spacing: 0.2px;
+
+}
+
+.footer_icons{
+    display: flex;
+    gap: 20px;
+}
