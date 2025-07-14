@@ -1,952 +1,1078 @@
 :root {
-    --second-text-color: rgba(115, 115, 115, 1);
-    --light-text-color: rgba(255, 255, 255, 1);
-    --text-color: rgba(37, 43, 66, 1);
-    --light-background-color: rgba(255, 255, 255, 1);
-    --danger-color: rgba(231, 64, 64, 1);
-    --primary-color: rgba(150, 187, 124, 1);
-    --primary-text-color: rgba(150, 187, 124, 1);
-    --faded-primary-color: rgba(239, 248, 237, 1);
-
+  --second-text-color: rgba(115, 115, 115, 1);
+  --light-text-color: rgba(255, 255, 255, 1);
+  --text-color: rgba(37, 43, 66, 1);
+  --light-background-color: rgba(255, 255, 255, 1);
+  --danger-color: rgba(231, 64, 64, 1);
+  --primary-color: rgba(150, 187, 124, 1);
+  --primary-text-color: rgba(150, 187, 124, 1);
+  --faded-primary-color: rgba(239, 248, 237, 1);
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    transition: all 0.5s ease;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.5s ease;
 }
-img{
-    max-width:100% ;
-    height: auto;
+img {
+  max-width: 100%;
+  height: auto;
 }
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
-button{
-    cursor: pointer;
+button {
+  cursor: pointer;
 }
 .section-bg {
-    background-color: rgb(239, 248, 237);
-    width: 100%;
+  background-color: rgb(239, 248, 237);
+  width: 100%;
+  height: 770px;
+}
 
+.nav {
+  display: none;
+}
+
+#hangburger_button {
+  display: none;
 }
 
 .Container {
-    margin: auto;
-    padding: 0px 15px;
-    max-width: 1050px;
+  margin: auto;
+  padding: 0px 15px;
+  max-width: 1050px;
 }
 
 .header {
-    display: flex;
-    height: 91px;
-    justify-content: space-between;
-    align-items: center;
-
+  display: flex;
+  height: 91px;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
 }
 
 .logo {
-    display: flex;
-
+  display: flex;
 }
 
 #logo_name {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 32px;
-    letter-spacing: 0.1px;
-    color: var(--text-color);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0.1px;
+  color: var(--text-color);
 }
 
 .nav_bar {
-    display: flex;
-    gap: 250px;
+  display: flex;
+  gap: 250px;
 }
 
 .nav_list {
-    padding-top: 15px;
-    gap: 21px;
-    display: flex;
-    list-style: none;
+  padding-top: 15px;
+  gap: 21px;
+  display: flex;
+  list-style: none;
 }
 
-
 .nav_ls_item {
-    text-decoration: none;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 24px;
-    letter-spacing: 0.2px;
-    text-align: right;
-    color: var(--second-text-color);
-
+  text-decoration: none;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  text-align: right;
+  color: var(--second-text-color);
 }
 
 .nav_bar_logins {
-    padding-left: 100px;
-    gap: 45px;
-    display: flex;
+  padding-left: 100px;
+  gap: 45px;
+  display: flex;
 }
 
 #nav_logins_item_1 {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 22px;
-    letter-spacing: 0.2px;
-    padding-top: 15px;
-    text-align: right;
-    color: var(--primary-color);
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0.2px;
+  padding-top: 15px;
+  text-align: right;
+  color: var(--primary-color);
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 }
 
 #nav_logins_item_2 {
-    width: 137px;
-    height: 52px;
-    gap: 15px;
-    border-radius: 5px;
-    background-color: var(--primary-color);
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 22px;
-    letter-spacing: 0.2px;
-    border: none;
-    color: white;
+  width: 137px;
+  height: 52px;
+  gap: 15px;
+  border-radius: 5px;
+  background-color: var(--primary-color);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0.2px;
+  border: none;
+  color: white;
 }
 
 #online {
-    font-family: Montserrat;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: 0.1px;
-    color: rgba(150, 187, 124, 1);
-
-
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.1px;
+  color: rgba(150, 187, 124, 1);
 }
 
 #high {
-    font-family: Montserrat;
-    font-weight: 700;
-    font-size: 47px;
-    line-height: 65px;
-    letter-spacing: 0.2px;
-    color: var(--text-color);
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 47px;
+  line-height: 65px;
+  letter-spacing: 0.2px;
+  color: var(--text-color);
 }
 
 #every_day {
-    font-family: Montserrat;
-    font-weight: 400;
-    font-size: 19px;
-    line-height: 30px;
-    letter-spacing: 0.2px;
-    color: var(--second-text-color);
-
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 30px;
+  letter-spacing: 0.2px;
+  color: var(--second-text-color);
 }
 
 #hero_button_1 {
-    font-family: Montserrat;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 22px;
-    letter-spacing: 0.2px;
-    text-align: center;
-    background-color: rgba(150, 187, 124, 1);
-    border: none;
-    color: rgba(255, 255, 255, 1);
-    border-radius: 5px;
-    height: 52px;
-    width: 193px;
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0.2px;
+  text-align: center;
+  background-color: rgba(150, 187, 124, 1);
+  border: none;
+  color: rgba(255, 255, 255, 1);
+  border-radius: 5px;
+  height: 52px;
+  width: 193px;
 }
 
 #hero_button_2 {
-    font-family: Montserrat;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 22px;
-    letter-spacing: 0.2px;
-    text-align: center;
-    color: rgba(150, 187, 124, 1);
-    background-color: transparent;
-    border-color: rgba(150, 187, 124, 1);
-    border-radius: 5px;
-    width: 162px;
-    height: 52px;
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0.2px;
+  text-align: center;
+  color: rgba(150, 187, 124, 1);
+  background-color: transparent;
+  border-color: rgba(150, 187, 124, 1);
+  border-radius: 5px;
+  width: 162px;
+  height: 52px;
 }
 
 .hero {
-    display: flex;
-    top: 20px;
+  display: flex;
+  top: 20px;
 }
 
 #hero_left_buttons {
-    gap: 10px;
-    display: flex;
-    padding-top: 10px;
+  gap: 10px;
+  display: flex;
+  padding-top: 10px;
 }
 
 .hero_left {
-    padding-top: 200px;
+  padding-top: 200px;
 }
 
-.hero_image_1{
-    width: 661px;
+.hero_image_1 {
+  width: 661px;
 }
-
 
 /* second page */
 
 .Section_main {
-    height: 782px;
+  height: 782px;
 }
 
 .green_small_heading {
-    font-family: Montserrat;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 24px;
-    letter-spacing: 0.2px;
-    color: var(--primary-text-color);
-
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  color: var(--primary-text-color);
 }
 
 .blue_big_heading {
-    font-family: Montserrat;
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 50px;
-    letter-spacing: 0.2px;
-    color: var(--text-color);
-
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+  letter-spacing: 0.2px;
+  color: var(--text-color);
 }
 
 .gray_parahraph {
-    font-family: Montserrat;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 20px;
-    letter-spacing: 0.2px;
-    color: var(--second-text-color);
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  color: var(--second-text-color);
 }
 
 .section_main_contents {
-    display: grid;
-    gap: 112px;
-    padding: 112px;
-    justify-content: center;
-    align-items: center;
-
+  display: grid;
+  gap: 112px;
+  padding: 112px;
+  justify-content: center;
+  align-items: center;
 }
 
 .banner_part {
-    display: flex;
-    gap: 35px;
-    /* padding: 100px; */
+  display: flex;
+  gap: 35px;
+  /* padding: 100px; */
 }
 
 .card {
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
-    /* Adds a soft shadow */
-    padding: 20px;
-    background-color: white;
-
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+  /* Adds a soft shadow */
+  padding: 20px;
+  background-color: white;
 }
 
-.card:hover{
-    background-color: var(--primary-color);
-    transform: scale(1.1);
+.card:hover {
+  background-color: var(--primary-color);
+  transform: scale(1.1);
 }
-.card:hover .c_heading{
-    color: white;
+.card:hover .c_heading {
+  color: white;
 }
-.card:hover .card_para{
-    color: white;
+.card:hover .card_para {
+  color: white;
 }
-.card:hover .card_red_line{
-    background-color: white;
+.card:hover .card_red_line {
+  background-color: white;
 }
 .card_heading {
-    font-family: Montserrat;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: 0.1px;
-    color: var(--text-color);
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.1px;
+  color: var(--text-color);
 }
 
 .card_red_line {
-    width: 50px;
-    height: 2px;
-    background-color: var(--danger-color);
-
+  width: 50px;
+  height: 2px;
+  background-color: var(--danger-color);
 }
 
 .card_para {
-    font-family: Montserrat;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 20px;
-    letter-spacing: 0.2px;
-    color: var(--second-text-color);
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  color: var(--second-text-color);
 }
-
 
 /* page 3 */
 .section_3 {
-    height: 715px;
+  height: 715px;
 }
 
 .sec_3 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* padding: 115px; */
-    gap: 34px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* padding: 115px; */
+  gap: 34px;
+}
+#section_three_blue_heading{
+  width: 238px;
 }
 
 .red_line {
-    width: 94px;
-    height: 7px;
-    background-color: var(--danger-color);
+  width: 94px;
+  height: 7px;
+  background-color: var(--danger-color);
 }
 
 .r_content {
-    /* background-color: chartreuse; */
-    display: grid;
-    gap: 10px;
-
+  /* background-color: chartreuse; */
+  display: grid;
+  gap: 10px;
 }
 
 /* page 4 csss */
 
 .approdable_packages_content {
-    display: flex;
-    gap: 30px;
-    margin-top: 10px;
-
-
+  display: flex;
+  gap: 30px;
+  margin-top: 10px;
 }
 
-
-
 .approdable_packages_image {
-    border-radius: 20px;
+  border-radius: 20px;
 }
 
 .approdable_packages_left {
-    display: grid;
-    gap: 35px;
+  display: grid;
+  gap: 35px;
 }
 
 .section_approdable_packages {
-    height: 676px;
+  height: 676px;
 }
-
-
-
-
 
 /* add banner card css */
 
 .add_card {
-    display: grid;
-    gap: 5px
+  display: grid;
+  gap: 5px;
 }
 
 .sale {
-    font-family: Montserrat;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 24px;
-    letter-spacing: 0.2px;
-    text-align: center;
-    color: var(--light-text-color);
-    background-color: var(--danger-color);
-    width: 51px;
-    border-radius: 3px;
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  text-align: center;
+  color: var(--light-text-color);
+  background-color: var(--danger-color);
+  width: 51px;
+  border-radius: 3px;
 }
 
 .card_icons {
-    display: flex;
-    gap: 10px;
-    position: absolute;
-    z-index: 1;
-    top: 236px;
-    left: 49px;
-
+  display: flex;
+  gap: 10px;
+  position: absolute;
+  z-index: 1;
+  top: 236px;
+  left: 49px;
 }
-.c_image{
-    width: 72px;
+.c_image {
+  width: 72px;
 }
 
 .sale {
-    position: absolute;
-    z-index: 1;
-    top: 20px;
-    left: 20px;
-
+  position: absolute;
+  z-index: 1;
+  top: 20px;
+  left: 20px;
 }
 
 .card_small_heading {
-    display: flex;
-    gap: 10px;
-
+  display: flex;
+  gap: 10px;
 }
 
 .ratting_part {
-    display: flex;
-    background-color: rgba(45, 64, 89, 1);
-    border-radius: 20px;
-    width: 50px;
-    height: 26px;
-    justify-content: center;
-    align-items: center;
-    /* gap:px; */
+  display: flex;
+  background-color: rgba(45, 64, 89, 1);
+  border-radius: 20px;
+  width: 50px;
+  height: 26px;
+  justify-content: center;
+  align-items: center;
 }
 
 .card_download_part {
-    display: flex;
-    gap: 10px;
+  display: flex;
+  gap: 10px;
 }
 
 .price_part {
-    display: flex;
-    gap: 5px;
+  display: flex;
+  gap: 5px;
 }
 
 .card_icon_button {
-    width: 40px;
-    height: 40px;
-    border-radius: 50px;
-    background-color: rgb(255, 255, 255);
-    border: none;
-    justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  background-color: rgb(255, 255, 255);
+  border: none;
+  justify-content: center;
 }
 
 .card_top_part {
-    position: relative;
+  position: relative;
 }
-.section_most_popular_courses{
-    height: 1088px;
+.section_most_popular_courses {
+  height: 1088px;
 }
 
 /* card bottoommm */
 
 .card_green_small_heading {
-    font-family: Montserrat;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 24px;
-    letter-spacing: 0.2px;
-    color: var(--primary-text-color);
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  color: var(--primary-text-color);
 }
 
 .ratting_text {
-    color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
 }
 
 .card_bottom_part {
-    display: grid;
-    padding: 14px;
-    gap: 10px;
+  display: grid;
+  padding: 14px;
+  gap: 10px;
 }
 
 .card_blue_big_heading {
-    font-family: Montserrat;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: 0.1px;
-    color: var(--text-color);
-
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.1px;
+  color: var(--text-color);
 }
 
 .card_gray_paragraph {
-    font-family: Montserrat;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 20px;
-    letter-spacing: 0.2px;
-    color: var(--second-text-color);
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  color: var(--second-text-color);
 }
 
 .card_gray_sale {
-    font-family: Montserrat;
-    font-weight: 700;
-    font-size: 14px;
-    color: var(--second-text-color);
-    line-height: 24px;
-    letter-spacing: 0.2px;
-
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--second-text-color);
+  line-height: 24px;
+  letter-spacing: 0.2px;
 }
-
 
 .gray_price {
-    font-family: Montserrat;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: 0.1px;
-    text-align: center;
-    color: rgba(189, 189, 189, 1);
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.1px;
+  text-align: center;
+  color: rgba(189, 189, 189, 1);
 }
-
 
 .orange_price {
-    font-family: Montserrat;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: 0.1px;
-    text-align: center;
-    color: rgba(255, 171, 113, 1);
-
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.1px;
+  text-align: center;
+  color: rgba(255, 171, 113, 1);
 }
-
-
 
 .card_learn_more {
-    border-color: var(--primary-color);
-    border-radius: 37px;
-    width: 142px;
-    height: 44px;
-    background-color: transparent;
-    color: var(--primary-color);
-
+  border-color: var(--primary-color);
+  border-radius: 37px;
+  width: 142px;
+  height: 44px;
+  background-color: transparent;
+  color: var(--primary-color);
 }
-
 
 .adds {
-    display: flex;
-    /* justify-content: space-between; */
-    gap: 30px;
+  display: flex;
+  /* justify-content: space-between; */
+  gap: 30px;
 }
-
 
 .most_popular_courses_content {
-    display: grid;
-    gap: 80px;
+  display: grid;
+  gap: 80px;
 }
-
-
 
 /* page 6 css */
 
 .section_our_experts_teacher {
-    height: 1440px;
+  height: 1440px;
 }
 
 .our_experts_teacher_top_part {
-    display: grid;
-    gap: 10px;
+  display: grid;
+  gap: 10px;
 }
 
-.our_experts_teacher_contents{
-    display: grid;
-    gap: 80px;
+.our_experts_teacher_contents {
+  display: grid;
+  gap: 80px;
 }
 
-.our_experts_teacher_bottom_part{
-    display: flex;
-    gap: 30px;
+.our_experts_teacher_bottom_part {
+  display: flex;
+  gap: 30px;
 }
-.our_experts_teacher_card{
-    display: grid;
-    gap: 35px;
-     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
-    padding-top: 50px;
-    padding-bottom: 50px;
-    padding-left: 40px;
-    padding-right: 40px;
-    justify-content: center;
+#our_experts_teacher_card_for_new {
+  position: relative;
+}
+.our_experts_teacher_card_for_new_icon_text {
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 24px;
+  color: white;
+  line-height: 32px;
+  letter-spacing: 0.1px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  padding-top: 25px;
 }
 
-.our_experts_teacher_card:hover{
-background-color: rgba(45, 64, 89, 1);
+.our_experts_teacher_card_for_new_icon {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background-color: rgba(231, 124, 64, 1);
+  position: absolute;
+  top: -11px;
+  left: 261px;
 }
-.our_experts_teacher_card_heart{
-    display: flex;
-    justify-content: center;
+.our_experts_teacher_card {
+  display: grid;
+  gap: 35px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 40px;
+  padding-right: 40px;
+  justify-content: center;
+}
+
+.our_experts_teacher_card:hover {
+  background-color: rgba(45, 64, 89, 1);
+}
+.our_experts_teacher_card_heart {
+  display: flex;
+  justify-content: center;
 }
 
 .our_experts_teacher_card_heart_icon {
-    height: 80px;
-    width: 80px;
-    border-radius: 200px;
-    border: none;
-    color: white;
-    background-color: rgba(150, 187, 124, 1);
+  height: 80px;
+  width: 80px;
+  border-radius: 200px;
+  border: none;
+  color: white;
+  background-color: rgba(150, 187, 124, 1);
 }
-
 
 .our_experts_teacher_card_list_green_tick {
-    background-color:rgba(45, 192, 113, 1);
-    width: 32px;
-    height: 32px;
-    border-radius: 50px;
-    border: none;
-    align-items: center;
-    display: flex;
-    justify-content: center;
+  background-color: rgba(45, 192, 113, 1);
+  width: 32px;
+  height: 32px;
+  border-radius: 50px;
+  border: none;
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }
 
-.our_experts_teacher_card_list_green_tick_white{
-    background-color:var(--second-text-color);
-    width: 32px;
-    height: 32px;
-    border-radius: 50px;
-    border: none;
-    align-items: center;
-    display: flex;
-    justify-content: center;
+.our_experts_teacher_card_list_green_tick_white {
+  background-color: var(--second-text-color);
+  width: 32px;
+  height: 32px;
+  border-radius: 50px;
+  border: none;
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }
-
 
 .our_experts_teacher_card_free_heading {
-    font-family: Montserrat;
-    font-weight: 700;
-    font-size: 24px;
-    color: var(--text-color);
-    line-height: 32px;
-    letter-spacing: 0.1px;
-    text-align: center;
-
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 24px;
+  color: var(--text-color);
+  line-height: 32px;
+  letter-spacing: 0.1px;
+  text-align: center;
 }
-.our_experts_teacher_card:hover .our_experts_teacher_card_free_heading{
-    color: white;
-}
-
-.our_experts_teacher_card_gray_small_heading{
-    font-family: Montserrat;
-font-weight: 700;
-font-size: 14px;
-color: var(--second-text-color);
-line-height: 24px;
-letter-spacing: 0.2px;
-text-align: center;
+.our_experts_teacher_card:hover .our_experts_teacher_card_free_heading {
+  color: white;
 }
 
-.our_experts_teacher_card:hover .our_experts_teacher_card_gray_small_heading{
-    color: white;
-}
-.our_experts_teacher_card_price_text{
-    font-family: Montserrat;
-font-weight: 700;
-font-size: 40px;
-color: var(--primary-color);
-line-height: 50px;
-letter-spacing: 0.2px;
-text-align: center;
-
+.our_experts_teacher_card_gray_small_heading {
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--second-text-color);
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  text-align: center;
 }
 
-.our_experts_teacher_card_per_month_text{
-    font-family: Montserrat;
-font-weight: 700;
-font-size: 14px;
-color: rgba(142, 194, 242, 1);
-line-height: 24px;
-letter-spacing: 0.2px;
-text-align: center;
-
+.our_experts_teacher_card:hover .our_experts_teacher_card_gray_small_heading {
+  color: white;
+}
+.our_experts_teacher_card_price_text {
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 40px;
+  color: var(--primary-color);
+  line-height: 50px;
+  letter-spacing: 0.2px;
+  text-align: center;
 }
 
-.our_experts_teacher_card_paragraph{
-    font-family: Montserrat;
-font-weight: 400;
-font-size: 14px;
-color: var(--second-text-color);
-line-height: 20px;
-letter-spacing: 0.2px;
-text-align: center;
-
-}
-.our_experts_teacher_card:hover .our_experts_teacher_card_paragraph{
-    color: white;
+.our_experts_teacher_card_per_month_text {
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 14px;
+  color: rgba(142, 194, 242, 1);
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  text-align: center;
 }
 
-
-.our_experts_teacher_card_button{
-    font-family: Montserrat;
-font-weight: 700;
-font-size: 14px;
-color: var(--light-text-color);
-line-height: 22px;
-letter-spacing: 0.2px;
-text-align: center;
-background-color: var(--primary-color);
-width: 243px;
-height: 52px;
-border-radius: 5px;
-border: none;
+.our_experts_teacher_card_paragraph {
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--second-text-color);
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  text-align: center;
+}
+.our_experts_teacher_card:hover .our_experts_teacher_card_paragraph {
+  color: white;
 }
 
-
-.our_experts_teacher_card_list_text{
-    font-family: Montserrat;
-font-weight: 700;
-font-size: 14px;
-color: var(--text-color);
-line-height: 24px;
-letter-spacing: 0.2px;
+.our_experts_teacher_card_button {
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--light-text-color);
+  line-height: 22px;
+  letter-spacing: 0.2px;
+  text-align: center;
+  background-color: var(--primary-color);
+  width: 243px;
+  height: 52px;
+  border-radius: 5px;
+  border: none;
 }
 
-.our_experts_teacher_card:hover .our_experts_teacher_card_list_text{
-    color: white;
+.our_experts_teacher_card_list_text {
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--text-color);
+  line-height: 24px;
+  letter-spacing: 0.2px;
 }
-.our_experts_teacher_card_list_part{
-    display: grid;
-    gap: 15px;
+
+.our_experts_teacher_card:hover .our_experts_teacher_card_list_text {
+  color: white;
 }
-.our_experts_teacher_card_list_row{
-    display: flex;
-    gap: 10px;
-    align-items: center;
+.our_experts_teacher_card_list_part {
+  display: grid;
+  gap: 15px;
+}
+.our_experts_teacher_card_list_row {
+  display: flex;
+  gap: 10px;
+  align-items: center;
 }
 /* end of page 6 */
 /* ********************** */
 
 /* css of page 7 */
-.section_testimonials{
-    height:865px ;
+.section_testimonials {
+  height: 865px;
 }
 
-
-.testimonialscontents{
-    display: grid;
-    gap: 90px;
+.testimonialscontents {
+  display: grid;
+  gap: 90px;
 }
-.testimonials_top_part{
-    display: grid;
-    gap: 10px;
-}
-
-
-.testimonials_banner{
-    display: flex;
-    justify-content: space-between;
-    padding: 100px;
+.testimonials_top_part {
+  display: grid;
+  gap: 10px;
 }
 
-.testimonials_image{
-    border-radius: 200px;
-    width: 128px;
-    height: 128px;
-    /* align-items: center; */
+.testimonials_banner {
+  display: flex;
+  justify-content: space-between;
+  padding: 100px;
 }
 
-
-.testimonials_card_gray_parahraph{
-    font-family: Montserrat;
-font-weight: 400;
-font-size: 14px;
-color: var(--second-text-color);
-line-height: 20px;
-letter-spacing: 0.2px;
-/* text-align: center; */
-
+.testimonials_image {
+  border-radius: 200px;
+  width: 128px;
+  height: 128px;
+  /* align-items: center; */
 }
 
-
-
-
-.testimonials_card_name{
-    font-family: Montserrat;
-font-weight: 700;
-font-size: 16px;
-color: var(--text-color);
-line-height: 24px;
-letter-spacing: 0.1px;
-/* text-align: center; */
-
+.testimonials_card_gray_parahraph {
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--second-text-color);
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  /* text-align: center; */
 }
 
-
-.testimonials_card_role{
-    font-family: Montserrat;
-font-weight: 700;
-font-size: 14px;
-color: var(--second-text-color);
-line-height: 24px;
-letter-spacing: 0.2px;
-/* text-align: center; */
-
+.testimonials_card_name {
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--text-color);
+  line-height: 24px;
+  letter-spacing: 0.1px;
+  /* text-align: center; */
 }
 
-
-.testimonials_card{
-    display: grid;
-    gap: 30px;
-    justify-content: center;
-    text-align: center;
-    
+.testimonials_card_role {
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--second-text-color);
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  /* text-align: center; */
 }
 
-.testimonials_card_text_part{
-    display: grid;
-    gap: 15px;
-    text-align: center;
+.testimonials_card {
+  display: grid;
+  gap: 30px;
+  justify-content: center;
+  text-align: center;
+}
+
+.testimonials_card_text_part {
+  display: grid;
+  gap: 15px;
+  text-align: center;
 }
 
 /* end of 7 */
 
 /* css to eigth */
-.section_newsletter{
-    background-color: rgba(255, 242, 243, 1);
-    height: 594px;
+.section_newsletter {
+  background-color: rgba(255, 242, 243, 1);
+  height: 594px;
 }
 
-.newsletter_contents{
-    display: grid;
-    gap: 80px;
-    padding: 160px;
+.newsletter_contents {
+  display: grid;
+  gap: 80px;
+  padding: 160px;
 }
-.newsletter_top_part{
-    text-align: center;
-    display: grid;
-    gap: 10px;
-}
-
-
-.form_button{
-    font-family: Montserrat;
-font-weight: 400;
-font-size: 14px;
-color: var(--light-text-color);
-line-height: 28px;
-letter-spacing: 0.2px;
-text-align: center;
-background-color: var(--primary-color);
-border: none;
-border-radius: 5px;
-width: 117px;
-height: 58px;
-
+.newsletter_top_part {
+  justify-content: center;
+  display: grid;
+  gap: 10px;
 }
 
-.searchbar{
-    border-radius: 5px;
-    width:688px ;
-    height:58px ;
-    border: none;
-    font-family: Montserrat;
-font-weight: 400;
-font-size: 14px;
-color: var(--second-text-color);
-line-height: 28px;
-letter-spacing: 0.2px;
-
+.form_button {
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--light-text-color);
+  line-height: 28px;
+  letter-spacing: 0.2px;
+  text-align: center;
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 5px;
+  width: 117px;
+  height: 58px;
+}
+.newsletter_bottom_part{
+  justify-content: center;
+}
+.searchbar {
+  border-radius: 5px;
+  width: 688px;
+  height: 58px;
+  border: none;
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--second-text-color);
+  line-height: 28px;
+  letter-spacing: 0.2px;
 }
 
-.formm_items{
-    display: flex;
+.formm_items {
+  display: flex;
+  justify-content: center;
 }
 
 /* footer css */
 
-
-.section_footer{
-    height: 346px;
+.section_footer {
+  height: 346px;
 }
 
-.footer_contents{
-    /* padding-bottom: 50px; */
-    padding-top: 50px;
-    display: grid;
-    gap: 60px;
+.footer_contents {
+  /* padding-bottom: 50px; */
+  padding-top: 50px;
+  display: grid;
+  gap: 60px;
 }
 
-.footer_top{
-    display: flex;
-    justify-content: space-between;
-    gap: 30px
+.footer_top {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
 }
 
-.footer-heading{
-    font-family: Montserrat;
-font-weight: 700;
-font-size: 16px;
-color: var(--text-color);
-line-height: 24px;
-letter-spacing: 0.1px;
-
-}
-
-
-.footer_list_text{
+.footer-heading {
   font-family: Montserrat;
-font-weight: 700;
-font-size: 14px;
-color: var(--second-text-color);
-line-height: 24px;
-letter-spacing: 0.2px;
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--text-color);
+  line-height: 24px;
+  letter-spacing: 0.1px;
 }
 
-.footer-column{
+.footer_list_text {
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--second-text-color);
+  line-height: 24px;
+  letter-spacing: 0.2px;
+}
+
+.footer-column {
+  display: grid;
+  gap: 20px;
+}
+
+.footer_list {
+  display: grid;
+  gap: 10px;
+}
+
+.footer_list_item {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer_bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 25px;
+  /* padding-bottom: 25px; */
+}
+
+.madewith_text {
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--second-text-color);
+  line-height: 24px;
+  letter-spacing: 0.2px;
+}
+
+.footer_icons {
+  display: flex;
+  gap: 20px;
+}
+@media (max-width: 1050px) {
+  body,
+  html {
+    margin: 0;
+    padding: 0;
+  }
+  .nav_bar {
+    gap: 218px;
+  }
+}
+@media (max-width: 1025px) {
+  body,
+  html {
+    margin: 0;
+    padding: 0;
+  }
+  .nav_bar {
+    gap: 220px;
+  }
+
+  .our_experts_teacher_bottom_part {
+    gap: 15px;
+  }
+}
+
+/* Responsive for mobile */
+@media (max-width: 960px) {
+  .hero_right {
+    display: none;
+  }
+  .sec_3_left {
+    display: none;
+  }
+
+  .approdable_packages_right {
+    display: none;
+  }
+
+  .banner_part {
     display: grid;
-    gap: 20px;
-}
-
-.footer_list{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .adds {
     display: grid;
-    gap: 10px;
-}
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .our_experts_teacher_card {
+    width: 300px;
+  }
 
-.footer_list_item{
-    list-style-type: none;
-    display: flex;
+  .menu {
+    display: grid;
+    background: #333;
+    color: white;
+    /* padding: 15px; */
+  }
+
+  .menu input {
+    display: none;
+  }
+
+  .menu label {
+    font-size: 26px;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  .nav {
+    display: none;
+    flex-direction: column;
+    background: #444;
+    padding: 10px;
+    position: absolute;
+    top: 100%;
+  }
+
+  .nav a {
+    color: white;
+    text-decoration: none;
+    padding: 8px;
+  }
+
+  /* Toggle icon based on checked state */
+  #toggle + label::before {
+    content: "☰";
+  }
+
+  #toggle:checked + label::before {
+    content: "✖";
+  }
+
+  #toggle:checked ~ .nav {
+    display: inline-flex;
     align-items: center;
-    gap: 10px;
-}
-
-
-.footer_bottom{
+  }
+  #hangburger_button {
     display: flex;
-    justify-content: space-between;
-   align-items: center;
-   padding-top: 25px;
-   /* padding-bottom: 25px; */
-}
+  }
+  .nav_bar {
+    display: none;
+  }
 
-
-.madewith_text{
-    font-family: Montserrat;
-font-weight: 700;
-font-size: 14px;
-color: var(--second-text-color);
-line-height: 24px;
-letter-spacing: 0.2px;
-
-}
-
-.footer_icons{
+  .hero {
     display: flex;
-    gap: 20px;
-}
-
-@media(max-width:1025px){
-        body,html{
-        margin: 0;
-        padding: 0;
-    }
-        .nav_bar{
-        gap: 220px;
-    }
-
-    .our_experts_teacher_bottom_part{
-        gap: 15px;
-    }
-
-
-}
-
-
-@media(max-width:769px){
+    justify-content: center;
+    align-items: center;
+  }
+  .hero_left {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .section-bg{
+    height: auto;
+  }
+  .Section_main{
+    height: auto;
+  }
+  .section_3{
+    height: auto;
+  }
+  .sec_3{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    justify-content: center;
+  }
+  .section_approdable_packages{
+    height: auto;
+  }
+  #section_three_blue_heading{
+    width: auto;
+  }
+  .approdable_packages_content{
+    justify-content: center;
+    padding-bottom: 50px;
+    padding-top: 50px;
+  }
+  .section_most_popular_courses{
+    height: auto;
+  }
+  .most_popular_courses_content{
+    justify-content: center;
+  }
+  .section_our_experts_teacher{
+    height: auto;
+  }
+  .our_experts_teacher_contents{
+    justify-content: center;
+  }
+  .our_experts_teacher_bottom_part{
+    display: grid;
+    justify-content: center;
+  }
+  .section_testimonials{
+    height: auto;
+  }
+  .testimonialscontents{
+    justify-content: center;
     
+  }
+  .testimonials_top_part{
+    justify-content: center;
+  }
+  .section_newsletter{
+    height: auto;
+  }
+  .section_footer{
+    height: auto;
+  }
+  .searchbar{
+    width: 460px;
+  }
 }
